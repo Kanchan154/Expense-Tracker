@@ -6,5 +6,6 @@ const router = express.Router()
 
 router.post('/add', isAuth, addTransaction)
 router.get("/fetch/:year_month", isAuth, fetchTransactions)
+router.put("/update/:id", isAuth)
 
 export default router
